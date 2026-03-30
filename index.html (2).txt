@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo de Defensa Anti-Clausura | Estrato Legal Consultores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-accent: #C5A059;
+            --navy-deep: #0A192F;
+            --navy-estrato: #0A3D62;
+            --wa-green: #25D366;
+            --danger-red: #E11D48;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-gold { color: var(--gold-accent); }
+        .bg-navy { background-color: var(--navy-deep); }
+        .bg-estrato { background-color: var(--navy-estrato); }
+        
+        /* Efecto de Urgencia */
+        .urgency-bar {
+            background: linear-gradient(90deg, #0A192F 0%, #E11D48 100%);
+            animation: pulseBg 3s infinite;
+        }
+        @keyframes pulseBg {
+            0% { opacity: 0.95; }
+            50% { opacity: 1; }
+            100% { opacity: 0.95; }
+        }
+
+        .hero-form {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 40px 80px -20px rgba(10, 25, 47, 0.3);
+            border: 2px solid #f1f5f9;
+        }
+
+        .whatsapp-main {
+            background-color: var(--wa-green);
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .trust-badge {
+            transition: all 0.3s ease;
+            filter: grayscale(1) opacity(0.5);
+        }
+        .trust-badge:hover {
+            filter: grayscale(0) opacity(1);
+        }
+
+        /* Brevo Overrides */
+        #sib-container { border: none !important; padding: 0 !important; }
+        .sib-form-block__button { 
+            width: 100% !important; 
+            padding: 20px !important; 
+            border-radius: 12px !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.2s ease;
+        }
+        .sib-form-block__button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-900 overflow-x-hidden">
+
+    <div class="urgency-bar text-white text-[10px] py-2 text-center font-bold uppercase tracking-[0.2em]">
+        ⚠️ Alerta: Incremento de inspecciones INVEA en CDMX este mes
+    </div>
+
+    <main class="max-w-5xl mx-auto px-6 pt-12 md:pt-20 pb-12">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            
+            <div class="space-y-8 text-left">
+                <div class="inline-flex items-center gap-2 bg-navy text-white px-4 py-1 rounded-full">
+                    <span class="w-2 h-2 bg-red-500 rounded-full animate-ping"></span>
+                    <span class="text-[10px] font-black uppercase tracking-widest">Blindaje Inmediato</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-black text-navy-deep leading-[1.1] tracking-tighter">
+                    ¿TU NEGOCIO ESTÁ <br>
+                    <span class="text-gold italic">REALMENTE</span> SEGURO?
+                </h1>
+                
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    La clausura no avisa, llega. Descarga el <strong>Protocolo Maestro de Defensa</strong> que utilizan los establecimientos Top de la CDMX para superar auditorías del INVEA y Protección Civil sin pagar multas.
+                </p>
+
+                <ul class="space-y-4 text-sm font-medium text-gray-700">
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L9 10.586l3.293-3.293a1 1 0 111.414 1.414z"></path></svg>
+                        Evita la suspensión inmediata de actividades.
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L9 10.586l3.293-3.293a1 1 0 111.414 1.414z"></path></svg>
+                        Identifica los 7 puntos críticos que revisan HOY.
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L9 10.586l3.293-3.293a1 1 0 111.414 1.414z"></path></svg>
+                        Ahorra hasta $1.5M en multas administrativas.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-full">
+                <div class="hero-form p-8 md:p-10 relative">
+                    <div class="absolute -top-4 -right-4 bg-red-600 text-white text-[10px] font-bold px-4 py-2 rounded-lg shadow-xl uppercase">
+                        Gratis por tiempo limitado
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl font-black text-navy-deep uppercase tracking-tight">Recibir Protocolo PDF</h2>
+                        <p class="text-gray-400 text-xs mt-2">Acceso instantáneo a tu correo</p>
+                    </div>
+                    
+                    <div id="sib-form-container" class="sib-form-container">
+                        <form id="sib-form" method="POST" action="https://87f171f3.sibforms.com/serve/MUIFACAM5jncXoDiiZ0guFK0LZ8OlGGxwotyvHQ9CV0D5TY73zsC3ovCsjlFNt9RHdgUm-vwAZnint2sKEIac5SvLB5iVoWhWXb3wl2Gls_hqHbQka0exaADtHbZ2t8DNsEwJhR3aIuSwCfsqyqjREYxbuJQllq1K5ROpw_IKVeVAxcQQwbjvIF33l5kXbcww32Gz4baXVtpImkXTQ==">
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-[10px] font-bold text-gray-500 uppercase mb-1">Nombre Completo</label>
+                                    <input type="text" id="NOMBRE" name="NOMBRE" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-gold-accent outline-none transition-all" required placeholder="Ej: Juan Pérez">
+                                </div>
+                                <div>
+                                    <label class="block text-[10px] font-bold text-gray-500 uppercase mb-1">Correo Corporativo</label>
+                                    <input type="email" id="EMAIL" name="EMAIL" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-gold-accent outline-none transition-all" required placeholder="tu@empresa.com">
+                                </div>
+                                <button type="submit" class="w-full bg-navy text-white font-black py-4 rounded-lg hover:bg-black transition-all shadow-lg text-sm tracking-widest">
+                                    OBTENER PROTOCOLO AHORA
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <p class="text-[9px] text-gray-400 text-center mt-6 leading-relaxed italic">
+                        Al solicitarlo, aceptas nuestro Aviso de Privacidad. Protegemos tu información como nuestra propia defensa legal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="text-[10px] font-black text-gray-400 uppercase tracking-[0.4em] mb-12 italic">Dominio Normativo sobre:</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20">
+                <span class="trust-badge font-black text-lg text-navy-deep tracking-tighter italic underline decoration-gold-accent decoration-4">INVEA</span>
+                <span class="trust-badge font-black text-lg text-navy-deep tracking-tighter italic underline decoration-gold-accent decoration-4">SEDEMA</span>
+                <span class="trust-badge font-black text-lg text-navy-deep tracking-tighter italic underline decoration-gold-accent decoration-4">PROTECCIÓN CIVIL</span>
+                <span class="trust-badge font-black text-lg text-navy-deep tracking-tighter italic underline decoration-gold-accent decoration-4">SEDUE</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 bg-navy text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-10">
+            <div class="space-y-2">
+                <p class="text-gold font-black text-xs uppercase tracking-[0.5em]">Estrato Legal Consultores</p>
+                <p class="text-white/40 text-[10px] font-medium uppercase tracking-[0.2em]">Defensa Administrativa de Alto Nivel | CDMX</p>
+            </div>
+            <div class="h-[1px] w-20 bg-gold-accent/30 mx-auto"></div>
+            <p class="text-[9px] text-white/30 uppercase tracking-widest">&copy; 2026 Todos los derechos reservados. Consultoría Preventiva.</p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-8 right-8 z-[2000] flex flex-col items-end gap-4">
+        <div id="wa-menu" class="hidden flex flex-col gap-3 mb-2 animate-bounce">
+            <a href="https://wa.me/525627308345?text=URGENTE%3A%20Tengo%20una%20inspecci%C3%B3n%20ahora." target="_blank" class="bg-red-600 text-white px-6 py-3 rounded-full text-xs font-bold shadow-2xl flex items-center gap-2">
+                🔴 ¿Inspección ahora mismo? Clic aquí
+            </a>
+            <a href="https://wa.me/525627308345?text=Hola%2C%20quiero%20agendar%20una%20Auditor%C3%ADa%20Preventiva." target="_blank" class="bg-wa-green text-white px-6 py-3 rounded-full text-xs font-bold shadow-2xl flex items-center gap-2">
+                🔍 Agendar Auditoría Preventiva
+            </a>
+        </div>
+        <div class="whatsapp-main" onclick="document.getElementById('wa-menu').classList.toggle('hidden')">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+    </div>
+
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+</body>
+</html>
