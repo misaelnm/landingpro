@@ -5,132 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protocolo de Defensa | Estrato Legal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --gold: #C5A059;
             --navy: #0A192F;
-            --ivory: #F9F9F9;
+            --deep-blue: #06101F;
         }
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--ivory);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #ffffff;
             color: var(--navy);
-            letter-spacing: -0.01em;
         }
-        .serif-title {
-            font-family: 'Cinzel', serif;
-            letter-spacing: 0.05em;
+        .serif { font-family: 'Playfair Display', serif; }
+        
+        /* Gradiente de Poder */
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #112240 0%, #0A192F 100%);
         }
-        .gold-gradient {
-            background: linear-gradient(135deg, #C5A059 0%, #E2C28D 100%);
-        }
-        .input-elegant {
-            border: none;
-            border-bottom: 1px solid rgba(10, 25, 47, 0.2);
-            background: transparent;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .input-elegant:focus {
-            border-bottom: 1px solid var(--gold);
-            outline: none;
-            padding-left: 8px;
-        }
-        .btn-elite {
-            position: relative;
-            overflow: hidden;
-            background: var(--navy);
+
+        /* Botón de Oro Galvánico */
+        .btn-gold {
+            background: linear-gradient(135deg, #C5A059 0%, #947438 100%);
             color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.3);
+        }
+        .btn-gold:hover {
+            transform: scale(1.03) translateY(-3px);
+            box-shadow: 0 15px 40px rgba(197, 160, 89, 0.5);
+        }
+
+        /* Tarjeta de Formulario Flotante */
+        .glass-card {
+            background: white;
+            border-top: 5px solid var(--gold);
+            box-shadow: 0 40px 100px rgba(10, 25, 47, 0.15);
+        }
+
+        .input-focus:focus {
+            border-color: var(--gold);
+            ring-color: var(--gold);
+        }
+
+        /* WhatsApp de Prestigio */
+        .wa-button {
+            background: #25D366;
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
             transition: all 0.3s ease;
         }
-        .btn-elite:hover {
-            background: #112240;
-            transform: translateY(-2px);
-            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.15);
-        }
+        .wa-button:hover { transform: rotate(-5deg) scale(1.1); }
     </style>
 </head>
 <body class="antialiased">
 
-    <nav class="py-8 px-10 flex justify-between items-center border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
-        <div class="serif-title font-bold text-lg tracking-widest">
-            ESTRATO <span class="text-gold font-normal">LEGAL</span>
-        </div>
-        <div class="hidden md:block text-[10px] uppercase tracking-[0.3em] font-semibold text-gray-400">
-            Consultoría Normativa Especializada • CDMX
-        </div>
-    </nav>
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 hero-gradient -z-10"></div>
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 transform translate-x-20"></div>
 
-    <main class="max-w-7xl mx-auto px-6 py-20 md:py-32">
-        <div class="flex flex-col lg:flex-row gap-24 items-start">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center py-20">
             
-            <div class="lg:w-3/5 space-y-12">
-                <div class="space-y-6">
-                    <h2 class="text-gold serif-title text-sm font-bold tracking-[0.4em] uppercase">Private Access</h2>
-                    <h1 class="text-5xl md:text-7xl font-light leading-[1.1] text-navy tracking-tight">
-                        Protocolo de <br>
-                        <span class="font-semibold italic">Defensa.</span>
-                    </h1>
+            <div class="text-white space-y-8">
+                <div class="inline-block border-l-2 border-gold pl-4">
+                    <span class="text-gold uppercase tracking-[0.4em] text-xs font-bold">Firma Jurídica de Élite</span>
                 </div>
                 
-                <p class="text-xl text-gray-500 font-light max-w-xl leading-relaxed">
-                    Un análisis técnico-jurídico riguroso diseñado para la alta dirección. Asegure el cumplimiento normativo ante verificaciones del <span class="text-navy font-semibold">INVEA</span> y <span class="text-navy font-semibold">Protección Civil</span>.
+                <h1 class="serif text-5xl md:text-7xl leading-tight">
+                    Blindaje Legal <br>
+                    <span class="italic text-gold">Inquebrantable.</span>
+                </h1>
+                
+                <p class="text-gray-300 text-xl font-light max-w-xl leading-relaxed">
+                    No permita que una inspección administrativa detenga su patrimonio. Implemente el <span class="text-white font-bold underline decoration-gold">Protocolo de Defensa</span> que utilizan los establecimientos más exclusivos de México.
                 </p>
 
-                <div class="flex gap-10 border-t border-gray-200 pt-10">
-                    <div>
-                        <span class="block text-2xl font-light">0%</span>
-                        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Riesgo Operativo</span>
+                <div class="grid grid-cols-2 gap-8 pt-6">
+                    <div class="space-y-2">
+                        <p class="text-3xl font-extrabold text-white italic">100%</p>
+                        <p class="text-[10px] uppercase tracking-widest text-gray-400">Efectividad Normativa</p>
                     </div>
-                    <div>
-                        <span class="block text-2xl font-light">CDMX</span>
-                        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Jurisdicción Focal</span>
+                    <div class="space-y-2">
+                        <p class="text-3xl font-extrabold text-white italic">CDMX</p>
+                        <p class="text-[10px] uppercase tracking-widest text-gray-400">Especialistas Locales</p>
                     </div>
                 </div>
             </div>
 
-            <div class="lg:w-2/5 w-full">
-                <div class="bg-white p-12 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.05)] border border-gray-50 relative">
-                    <div class="mb-12">
-                        <h3 class="serif-title text-xl mb-2">Solicitud de Acceso</h3>
-                        <p class="text-xs text-gray-400 uppercase tracking-widest">Recurso para Establecimientos Mercantiles</p>
+            <div class="w-full max-w-md mx-auto lg:ml-auto">
+                <div class="glass-card p-10 rounded-sm">
+                    <div class="text-center mb-10">
+                        <h2 class="serif text-2xl font-bold text-navy">Protocolo de Defensa</h2>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest mt-2">Acceso Exclusivo para Directivos</p>
                     </div>
 
-                    <form id="sib-form" method="POST" action="https://87f171f3.sibforms.com/serve/MUIFACAM5jncXoDiiZ0guFK0LZ8OlGGxwotyvHQ9CV0D5TY73zsC3ovCsjlFNt9RHdgUm-vwAZnint2sKEIac5SvLB5iVoWhWXb3wl2Gls_hqHbQka0exaADtHbZ2t8DNsEwJhR3aIuSwCfsqyqjREYxbuJQllq1K5ROpw_IKVeVAxcQQwbjvIF33l5kXbcww32Gz4baXVtpImkXTQ==">
-                        <div class="space-y-10">
-                            <div class="relative">
-                                <input type="text" id="NOMBRE" name="NOMBRE" class="input-elegant w-full py-4 text-sm placeholder:text-gray-300" required placeholder="Nombre y Apellido">
-                            </div>
-                            <div class="relative">
-                                <input type="email" id="EMAIL" name="EMAIL" class="input-elegant w-full py-4 text-sm placeholder:text-gray-300" required placeholder="Correo Corporativo">
-                            </div>
-                            <div class="pt-6">
-                                <button type="submit" class="btn-elite w-full py-5 text-[11px] font-bold tracking-[0.3em] uppercase">
-                                    Recibir Protocolo
-                                </button>
-                            </div>
+                    <form id="sib-form" method="POST" action="https://87f171f3.sibforms.com/serve/MUIFACAM5jncXoDiiZ0guFK0LZ8OlGGxwotyvHQ9CV0D5TY73zsC3ovCsjlFNt9RHdgUm-vwAZnint2sKEIac5SvLB5iVoWhWXb3wl2Gls_hqHbQka0exaADtHbZ2t8DNsEwJhR3aIuSwCfsqyqjREYxbuJQllq1K5ROpw_IKVeVAxcQQwbjvIF33l5kXbcww32Gz4baXVtpImkXTQ==" class="space-y-6">
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-400 uppercase mb-2">Nombre y Cargo</label>
+                            <input type="text" id="NOMBRE" name="NOMBRE" class="w-full px-4 py-3 bg-gray-50 border border-gray-100 focus:border-gold outline-none text-sm transition-all rounded-sm" required placeholder="EJ. LIC. JAVIER GARCÍA">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-400 uppercase mb-2">Correo Corporativo</label>
+                            <input type="email" id="EMAIL" name="EMAIL" class="w-full px-4 py-3 bg-gray-50 border border-gray-100 focus:border-gold outline-none text-sm transition-all rounded-sm" required placeholder="jgarcia@empresa.com">
+                        </div>
+                        <div class="pt-4">
+                            <button type="submit" class="w-full btn-gold py-5 text-[11px] font-black rounded-sm shadow-2xl">
+                                DESCARGAR PROTOCOLO AHORA
+                            </button>
                         </div>
                     </form>
 
-                    <div class="mt-12 flex justify-center grayscale opacity-30 gap-8">
-                        <span class="text-[9px] font-black tracking-widest uppercase">SEDEMA</span>
-                        <span class="text-[9px] font-black tracking-widest uppercase">ALCALDÍAS</span>
+                    <div class="mt-8 text-center">
+                        <p class="text-[9px] text-gray-400 leading-relaxed uppercase tracking-tighter">
+                            Al solicitar, acepta nuestra política de confidencialidad y manejo de datos.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <div class="fixed bottom-10 left-10 z-[100]">
-        <a href="https://wa.me/525627308345?text=Solicito%20consultor%C3%ADa%20jur%C3%ADdica%20especializada." target="_blank" class="flex items-center gap-4 group">
-            <div class="w-12 h-12 bg-navy text-white flex items-center justify-center rounded-full shadow-xl group-hover:bg-gold transition-colors duration-500">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.55 4.12 1.516 5.86L.045 24l6.29-1.65A11.947 11.947 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-            </div>
-            <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-navy opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white px-4 py-2 shadow-sm border border-gray-100">
-                Línea Directa Jurídica
-            </span>
-        </a>
-    </div>
+    <section class="py-10 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-12 opacity-30 grayscale hover:grayscale-0 transition-all duration-700">
+            <span class="font-black italic text-xl tracking-tighter">INVEA</span>
+            <span class="font-black italic text-xl tracking-tighter">SEDEMA</span>
+            <span class="font-black italic text-xl tracking-tighter">COFEPRIS</span>
+            <span class="font-black italic text-xl tracking-tighter">PROTECCIÓN CIVIL</span>
+        </div>
+    </section>
+
+    <a href="https://wa.me/525627308345?text=URGENTE%3A%20Requiero%20asistencia%20en%20materia%20administrativa." target="_blank" class="fixed bottom-10 right-10 z-50 flex items-center group">
+        <div class="bg-navy text-white text-[10px] font-bold py-2 px-4 rounded-l-full opacity-0 group-hover:opacity-100 transition-all mr-[-10px] pr-6 shadow-xl border-y border-l border-gold/50">
+            LÍNEA DE EMERGENCIA
+        </div>
+        <div class="wa-button w-16 h-16 rounded-full flex items-center justify-center text-white relative z-10 shadow-2xl">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.437 2.503 1.163 3.461l-.767 2.796 2.857-.749a5.736 5.736 0 002.515.582h.002c3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.77-5.77zM12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0z"/></svg>
+        </div>
+    </a>
 
     <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
